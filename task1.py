@@ -16,7 +16,9 @@ def get_days_from_today(date: str) -> int:
             date = datetime.strptime(no_space_date, date_pattern[1])
             today = datetime.now()
             return (today - date).days
-        raise ValueError('Invalid date format')
+        return ValueError('Invalid date format')
 
 
-print(get_days_from_today('2025-02-28'))
+user_input = input('Enter the date ')
+
+# print(get_days_from_today(user_input))
