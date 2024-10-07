@@ -19,6 +19,5 @@ def get_days_from_today(date: str) -> int:
         return ValueError('Invalid date format')
 
 
-user_input = input('Enter the date ')
-
+# user_input = input('Enter the date ')
 # print(get_days_from_today(user_input))
